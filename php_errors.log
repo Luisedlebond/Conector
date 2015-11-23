@@ -1,0 +1,3 @@
+[16-Nov-2015 19:25:32 UTC] PHP Fatal error:  Call to undefined function getAll() in /home/ubuntu/workspace/data/prueba.php on line 83
+[16-Nov-2015 19:25:32 UTC] PHP Stack trace:
+[16-Nov-2015 19:25:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/data/prueba.php:0
