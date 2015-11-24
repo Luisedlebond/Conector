@@ -27,7 +27,15 @@
     </style>
     <script>
         $(document).ready(function(){
-            var matriz = {x1:0,y1:0,z1:0,a1:0,x2:0,y2:0,z2:0,a2:0,x3:0,y3:0,z3:0,a3:0}; 
+            var matriz = {
+              <?php
+              $valor = array("x1","y1","z1","a1","x2","y2","z2","a2","x3","y3","z3","a3"); 
+              foreach ($valor as $value) {
+                echo "$value:0,";
+              }
+              ?>
+            }; 
+            // var matriz = {x1:0,y1:0,z1:0,a1:0,x2:0,y2:0,z2:0,a2:0,x3:0,y3:0,z3:0,a3:0};
             //var base = ["x1","y1","z1","a1","x2","y2","z2","a2","x3","y3","z3","a3"];
             $("button").click(function(){
               setMatriz();
@@ -105,9 +113,7 @@
           <div class="col-sm-4" id="detz"></div>
         </div>
     </div>
-    <p id="demo"><?php
-echo "My first PHP script!";
-?></p>
+    <p id="demo"></p>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
